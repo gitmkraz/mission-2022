@@ -14,13 +14,18 @@ footer{
     padding-left: 5%;
     
     }
+    .half-width h3 {
+      margin-top: 35px;
+      line-height: 46px;
+    }
 
-h1{
-    font-size: 80px;
-}
+    h1 {
+      font-size: 52px;
+      line-height: 1.5;
+  }
 
 h2{
-    font-size: 50px; 
+    font-size: 33px; 
 }
 
 h3{
@@ -30,7 +35,7 @@ h3{
     color: rgb(167, 17, 167);
 }
 
-p{font-size: 20px;}
+p{font-size: 20px;line-height: 25px;margin-top: -24px;}
 
 .scroll-down{ font-size: 15px;
 }
@@ -44,6 +49,12 @@ p{font-size: 20px;}
     font-weight:700;
     color: white;
     
+    margin-bottom: 41px;
+}
+.half-width p {
+	margin-bottom: 49px;
+	margin-top: 38px;
+	line-height: 24px;
 }
 
 .half-width{
@@ -52,7 +63,7 @@ p{font-size: 20px;}
 }
 
 .half-width img{
-    width: 70%;
+    width: 65%;
     padding-top: 30px;
     padding-left: 50px;
     
@@ -77,7 +88,7 @@ p{font-size: 20px;}
     margin: 20px;
     padding: 5%;
     border-radius: 20px;
-    box-shadow: 5px 7px 40px grey;
+    box-shadow: 5px 7px 19px gray;
 }
 
 .mission-area .vission{
@@ -86,7 +97,7 @@ p{font-size: 20px;}
     margin: 20px;
     padding: 5%;
     border-radius: 20px;
-    box-shadow: 5px 7px 40px grey;
+    box-shadow: 5px 7px 19px gray;
 }
 
 .mission-area .goals{
@@ -95,21 +106,21 @@ p{font-size: 20px;}
     margin: 20px;
     padding: 5%;
     border-radius: 20px;
-    box-shadow: 5px 7px 40px grey;
+    box-shadow: 5px 7px 19px gray;
 }
 
 .mission-area .mission img {
-    width: 100%;
+    width: 70%;
     float: left;
 }
 
 .mission-area .vission img {
-    width: 100%;
+    width: 70%;
     float: left;
 }
 
 .mission-area .goals img {
-    width: 100%;
+    width: 70%;
     float: left;
     
 }
@@ -129,6 +140,7 @@ width: 100%;
 padding-left:5%;
 margin-right: 70px;
 margin-left: -10px;
+margin-bottom: -50px;
 }
 
 .coding img {
@@ -165,35 +177,59 @@ margin-left: -10px;
     position: relative;
   }
   
-  #contact input[type="text"],
-  #contact input[type="email"],
-  #contact input[type="tel"],
-  #contact input[type="url"],
-  #contact textarea,
-  #contact button[type="submit"] {
-    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-  }
-  
-  #contact {
-    background: #f9f9f9;
-    padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
-  
-  #contact h3 {
+  .contact-section{
+    background: url(img/photo.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+.contact-section h1{
+    text-align: center;
+    color: black;
+}
+.border{
+    width: 90px;
+    height: 3px;
+    background: #EC2E54;
+    margin: 40px auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
     display: block;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
-  }
-  
-  #contact h4 {
-    margin: 5px 0 15px;
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-  }
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:hover{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+.textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #EC2E54;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+}
   
   fieldset {
     border: medium none !important;
